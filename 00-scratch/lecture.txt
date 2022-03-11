@@ -1,0 +1,12 @@
+Week 0 - Lecture 1 Notes
+
+
+Programming
+- takes input, creates output.
+
+
+General
+- computers only understand 1's and 0's, binary, base 2.
+- computers are made up of transistors, on or off.
+- ASCII allows for more character representation.
+- 
