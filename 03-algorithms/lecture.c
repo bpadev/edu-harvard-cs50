@@ -3,6 +3,7 @@
 // #include <string.h>
 
 
+// Linear Search 
 int main(void) 
 {
   // initialize array
@@ -21,6 +22,7 @@ int main(void)
 }
 
 
+// Linear Search
 int main(void) 
 {
   // string will not pickup without CS50 library.
@@ -70,4 +72,67 @@ int main(void)
   printf("Not found\n");
   return 1;
   
+}
+
+
+// Selection Sort Pseudocode, O(n^2), Omega(n^2), Theta(n^2)
+for i from 0 to n-1
+  Find smallest number between numbers[i] and numbers[n-1]
+  Swap smallest number with numbers[i]
+
+
+// Bubble Sort Pseudocode, 0(n^2), Omega(n) 
+Repeat n-1 times
+  For i from 0 to n-2
+    if numbers[i] and numbers[i+1] out of order
+      Swap them
+  If no swaps
+    Quit
+
+
+// Recursion (BInary Search, Divide and Conquer)
+
+// Iteration Approach
+int main(void)
+{
+  int height = get_int("Height: ");
+
+  draw(height);
+}
+
+void draw(int n)
+{
+  for (int i = 0; i < n; i++)
+  {
+    for (int j = 0; j < i + 1; j++)
+    {
+      printf("#");
+    }
+    printf("\n");
+  }
+}
+
+// Recursive Approach
+int main(void)
+{
+  int height = get_int("Height: ");
+
+  draw(height);
+}
+
+void draw(int n)
+{
+  if (n <= 0)
+  {
+    return;
+  }
+
+  draw(n - 1);
+
+  for (int i = 0; i < n; i++)
+  {
+    printf("#");
+  }
+  printf("\n");
+
 }
